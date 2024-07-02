@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:background="#FF3191" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fr_background"
+            android:orientation="vertical"
+            android:layout_marginVertical="30dp">
+
+            <ImageView
+                android:id="@+id/image_user"
+                android:src="@drawable/user"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="110dp"
+                android:layout_height="110dp"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/image_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:text="Vo Ngoc Thanh"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:textSize="14sp"
+                    android:textColor="#7C7C7C"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="thanhvnde160635@fpt.edu.vn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="382dp"
+            android:layout_height="1dp"
+            android:background="#D9D9D9"
+            android:layout_gravity="center_horizontal|bottom"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/item_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editProfile">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_address"
+            android:text="Thông tin địa chỉ"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/icon_next1"
+            android:src="@drawable/icon_navigate_next"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+    <LinearLayout
+        android:id="@+id/item_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_help"
+            android:text="Hướng dẫn sử dụng"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/icon_next2"
+            android:src="@drawable/icon_navigate_next"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/item_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_about"
+            android:text="Về Starlight"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/icon_next3"
+            android:src="@drawable/icon_navigate_next"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:background="#D9D9D9"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="40dp">
+
+        <LinearLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_radius_button"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

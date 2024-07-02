@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:background="#FF3191" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/icon_search"
+                    android:drawablePadding="8dp"
+                    android:hint="Bạn đang tìm gì nè?"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iconNotifications"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_noti"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgRedCircle"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/red_circle"
+                        app:layout_constraintEnd_toEndOf="@+id/iconNotifications"
+                        app:layout_constraintTop_toTopOf="@+id/iconNotifications" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgRedCircle"
+                        app:layout_constraintEnd_toEndOf="@+id/imgRedCircle"
+                        app:layout_constraintStart_toStartOf="@+id/imgRedCircle"
+                        app:layout_constraintTop_toTopOf="@+id/imgRedCircle"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/banner_app" />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/br_frame" />
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="150dp"-->
+            <!--                android:layout_marginTop="16dp">-->
+
+            <!--                <ProgressBar-->
+            <!--                    android:id="@+id/progressBar"-->
+            <!--                    style="?android:progressBarStyle"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--                                <androidx.viewpager2.widget.ViewPager2-->
+            <!--                                    android:id="@+id/viewPagerSlider"-->
+            <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+            <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="match_parent"/>-->
+            <!--                -->
+
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="Lựa vòng theo tính cách"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/style_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/style_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Đáng yêu"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/style_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/style_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Bí ẩn"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/style_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/style_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Vui tươi"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vòng được yêu thích"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Xem thêm"
+                    android:textColor="#901A51"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBarPopular"
+                    style="?android:progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvPopular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginBottom="8dp"-->
+            <!--                android:orientation="horizontal">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="240dp"-->
+<!--                                android:layout_marginVertical="10dp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:orientation="vertical">-->
+
+<!--                                    <FrameLayout-->
+<!--                                        android:layout_width="170dp"-->
+<!--                                        android:layout_height="155dp"-->
+<!--                                        android:layout_gravity="center_horizontal">-->
+
+<!--                                        <TextView-->
+<!--                                            android:layout_width="175dp"-->
+<!--                                            android:layout_height="70dp"-->
+<!--                                            android:background="@drawable/background_item"-->
+<!--                                            android:layout_gravity="bottom|center_horizontal"/>-->
+<!--                                        <ImageView-->
+<!--                                            android:layout_width="170dp"-->
+<!--                                            android:layout_height="155dp"-->
+<!--                                            android:layout_gravity="center_horizontal"-->
+<!--                                            android:src="@drawable/item_br_1" />-->
+<!--                                    </FrameLayout>-->
+
+<!--                                    <LinearLayout-->
+<!--                                        android:layout_width="170dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:background="@drawable/border_radius"-->
+<!--                                        android:orientation="vertical">-->
+
+<!--                                        <TextView-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_marginHorizontal="8dp"-->
+<!--                                            android:layout_marginTop="5dp"-->
+<!--                                            android:ellipsize="end"-->
+<!--                                            android:maxLines="2"-->
+<!--                                            android:text="Vòng Vui tươi"-->
+<!--                                            android:textColor="@color/black"-->
+<!--                                            android:textSize="14sp"-->
+<!--                                            android:textStyle="bold" />-->
+
+<!--                                        <TextView-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_marginHorizontal="8dp"-->
+<!--                                            android:ellipsize="end"-->
+<!--                                            android:maxLines="2"-->
+<!--                                            android:text="Nhựa"-->
+<!--                                            android:textColor="@color/black"-->
+<!--                                            android:textSize="12sp" />-->
+
+<!--                                        <LinearLayout-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_marginHorizontal="8dp"-->
+<!--                                            android:orientation="horizontal">-->
+
+<!--                                            <RelativeLayout-->
+<!--                                                android:layout_width="wrap_content"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_weight="1">-->
+
+<!--                                                <TextView-->
+<!--                                                    android:id="@+id/oldPrice1"-->
+<!--                                                    android:layout_width="wrap_content"-->
+<!--                                                    android:layout_height="wrap_content"-->
+<!--                                                    android:layout_marginEnd="8dp"-->
+<!--                                                    android:text=""-->
+<!--                                                    android:textColor="@color/darkGrey"-->
+<!--                                                    android:textSize="12sp" />-->
+
+<!--                                            </RelativeLayout>-->
+
+<!--                                        </LinearLayout>-->
+
+<!--                                        <RelativeLayout-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="match_parent">-->
+
+<!--                                            <TextView-->
+<!--                                                android:layout_width="wrap_content"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_marginHorizontal="8dp"-->
+<!--                                                android:text="150.000đ"-->
+<!--                                                android:textColor="@color/darkGrey"-->
+<!--                                                android:textSize="12sp"-->
+<!--                                                android:textStyle="bold" />-->
+
+<!--                                            <ImageView-->
+<!--                                                android:id="@+id/img_review1"-->
+<!--                                                android:layout_width="32dp"-->
+<!--                                                android:layout_height="32dp"-->
+<!--                                                android:layout_alignParentEnd="true"-->
+<!--                                                android:src="@drawable/add_to_card" />-->
+<!--                                        </RelativeLayout>-->
+<!--                                    </LinearLayout>-->
+<!--                                </LinearLayout>-->
+<!--                            </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="240dp"-->
+            <!--                    android:layout_marginVertical="10dp"-->
+            <!--                    android:layout_marginStart="15dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:orientation="vertical">-->
+
+            <!--                        <FrameLayout-->
+            <!--                            android:layout_width="170dp"-->
+            <!--                            android:layout_height="155dp"-->
+            <!--                            android:layout_gravity="center_horizontal">-->
+
+            <!--                            <TextView-->
+            <!--                                android:layout_width="175dp"-->
+            <!--                                android:layout_height="70dp"-->
+            <!--                                android:background="@drawable/background_item"-->
+            <!--                                android:layout_gravity="bottom|center_horizontal"/>-->
+            <!--                            <ImageView-->
+            <!--                                android:layout_width="170dp"-->
+            <!--                                android:layout_height="155dp"-->
+            <!--                                android:layout_gravity="center_horizontal"-->
+            <!--                                android:src="@drawable/item_br_2" />-->
+            <!--                        </FrameLayout>-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:layout_width="170dp"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:background="@drawable/border_radius"-->
+            <!--                            android:orientation="vertical">-->
+
+            <!--                            <TextView-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginHorizontal="8dp"-->
+            <!--                                android:layout_marginTop="5dp"-->
+            <!--                                android:ellipsize="end"-->
+            <!--                                android:maxLines="2"-->
+            <!--                                android:text="Vòng đại dương"-->
+            <!--                                android:textColor="@color/black"-->
+            <!--                                android:textSize="14sp"-->
+            <!--                                android:textStyle="bold" />-->
+
+            <!--                            <TextView-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginHorizontal="8dp"-->
+            <!--                                android:ellipsize="end"-->
+            <!--                                android:maxLines="2"-->
+            <!--                                android:text="Nhựa"-->
+            <!--                                android:textColor="@color/black"-->
+            <!--                                android:textSize="12sp" />-->
+
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginHorizontal="8dp"-->
+            <!--                                android:orientation="horizontal">-->
+
+            <!--                                <RelativeLayout-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_weight="1">-->
+
+            <!--                                    <TextView-->
+            <!--                                        android:id="@+id/oldPrice"-->
+            <!--                                        android:layout_width="wrap_content"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_marginEnd="8dp"-->
+            <!--                                        android:text=""-->
+            <!--                                        android:textColor="@color/darkGrey"-->
+            <!--                                        android:textSize="12sp" />-->
+
+            <!--                                </RelativeLayout>-->
+
+            <!--                            </LinearLayout>-->
+
+            <!--                            <RelativeLayout-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="match_parent">-->
+
+            <!--                                <TextView-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginHorizontal="8dp"-->
+            <!--                                    android:text="150.000đ"-->
+            <!--                                    android:textColor="@color/darkGrey"-->
+            <!--                                    android:textSize="12sp"-->
+            <!--                                    android:textStyle="bold" />-->
+
+            <!--                                <ImageView-->
+            <!--                                    android:id="@+id/img_review"-->
+            <!--                                    android:layout_width="32dp"-->
+            <!--                                    android:layout_height="32dp"-->
+            <!--                                    android:layout_alignParentEnd="true"-->
+            <!--                                    android:src="@drawable/add_to_card" />-->
+            <!--                            </RelativeLayout>-->
+            <!--                        </LinearLayout>-->
+            <!--                    </LinearLayout>-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

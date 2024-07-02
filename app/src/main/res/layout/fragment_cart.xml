@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/emptyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame_cart"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FF3191" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="Giỏ hàng của bạn"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/constraintLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp" />
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="12dp"-->
+                <!--                    android:orientation="vertical">-->
+
+                <!--                    <androidx.cardview.widget.CardView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="110dp"-->
+                <!--                        android:layout_marginStart="15dp"-->
+                <!--                        android:layout_marginTop="12dp"-->
+                <!--                        android:layout_marginEnd="15dp"-->
+                <!--                        android:layout_marginBottom="4dp"-->
+                <!--                        app:cardBackgroundColor="#f6f3f3"-->
+                <!--                        app:cardCornerRadius="10dp">-->
+
+                <!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content">-->
+
+                <!--                            <View-->
+                <!--                                android:id="@+id/view2"-->
+                <!--                                android:layout_width="92dp"-->
+                <!--                                android:layout_height="match_parent"-->
+                <!--                                android:background="@drawable/grey_background"-->
+                <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/cart_pic"-->
+                <!--                                android:layout_width="90dp"-->
+                <!--                                android:layout_height="match_parent"-->
+                <!--                                android:src="@drawable/item_br_1"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintEnd_toEndOf="@id/view2"-->
+                <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="1dp"-->
+                <!--                                android:layout_height="118dp"-->
+                <!--                                android:layout_marginStart="2dp"-->
+                <!--                                android:background="#D9D9D9"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintStart_toEndOf="@+id/cart_pic"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/titleTxt"-->
+                <!--                                android:layout_width="250dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginStart="15dp"-->
+                <!--                                android:layout_marginTop="20dp"-->
+                <!--                                android:ellipsize="end"-->
+                <!--                                android:text="Vòng vui tươi"-->
+                <!--                                android:textColor="@color/black"-->
+                <!--                                android:textSize="16sp"-->
+                <!--                                app:layout_constraintStart_toEndOf="@+id/view2"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <ImageView-->
+                <!--                                android:layout_width="18dp"-->
+                <!--                                android:layout_height="18dp"-->
+                <!--                                android:layout_marginTop="15dp"-->
+                <!--                                android:layout_marginEnd="15dp"-->
+                <!--                                android:src="@drawable/ic_trash"-->
+                <!--                                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                                android:layout_width="100dp"-->
+                <!--                                android:layout_height="30dp"-->
+                <!--                                android:layout_marginStart="15dp"-->
+                <!--                                android:layout_marginEnd="16dp"-->
+                <!--                                android:layout_marginBottom="15dp"-->
+                <!--                                android:background="@drawable/edittext_bg"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintStart_toEndOf="@+id/cart_pic">-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/plusCartBtn"-->
+                <!--                                    android:layout_width="28dp"-->
+                <!--                                    android:layout_height="28dp"-->
+                <!--                                    android:layout_marginVertical="2dp"-->
+                <!--                                    android:layout_marginEnd="2dp"-->
+                <!--                                    android:background="@drawable/edittext_bg"-->
+                <!--                                    android:backgroundTint="@color/pinkRed"-->
+                <!--                                    android:gravity="center"-->
+                <!--                                    android:text="+"-->
+                <!--                                    android:textColor="@color/white"-->
+                <!--                                    android:textSize="14sp"-->
+                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/numberItemTxt"-->
+                <!--                                    android:layout_width="wrap_content"-->
+                <!--                                    android:layout_height="wrap_content"-->
+                <!--                                    android:text="1"-->
+                <!--                                    android:textColor="@color/black"-->
+                <!--                                    android:textStyle="bold"-->
+                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/minusCartBtn"-->
+                <!--                                    android:layout_width="28dp"-->
+                <!--                                    android:layout_height="28dp"-->
+                <!--                                    android:layout_marginStart="2dp"-->
+                <!--                                    android:layout_marginTop="2dp"-->
+                <!--                                    android:layout_marginBottom="2dp"-->
+                <!--                                    android:background="@drawable/edittext_bg"-->
+                <!--                                    android:backgroundTint="@color/white"-->
+                <!--                                    android:gravity="center"-->
+                <!--                                    android:text="-"-->
+                <!--                                    android:textColor="@color/pinkRed"-->
+                <!--                                    android:textSize="14sp"-->
+                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginEnd="15dp"-->
+                <!--                                android:layout_marginBottom="15dp"-->
+                <!--                                android:text="150.000đ"-->
+                <!--                                android:textSize="18sp"-->
+                <!--                                android:textStyle="bold"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintEnd_toEndOf="parent" />-->
+
+                <!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <!--                    </androidx.cardview.widget.CardView>-->
+
+                <!--                    <androidx.cardview.widget.CardView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="110dp"-->
+                <!--                        android:layout_marginStart="15dp"-->
+                <!--                        android:layout_marginTop="12dp"-->
+                <!--                        android:layout_marginEnd="15dp"-->
+                <!--                        android:layout_marginBottom="4dp"-->
+                <!--                        app:cardBackgroundColor="#f6f3f3"-->
+                <!--                        app:cardCornerRadius="10dp">-->
+
+                <!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content">-->
+
+                <!--                            <View-->
+                <!--                                android:id="@+id/view22"-->
+                <!--                                android:layout_width="92dp"-->
+                <!--                                android:layout_height="match_parent"-->
+                <!--                                android:background="@drawable/grey_background"-->
+                <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/cart_pic2"-->
+                <!--                                android:layout_width="90dp"-->
+                <!--                                android:layout_height="match_parent"-->
+                <!--                                android:src="@drawable/item_br_2"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintEnd_toEndOf="@id/view22"-->
+                <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="1dp"-->
+                <!--                                android:layout_height="118dp"-->
+                <!--                                android:layout_marginStart="2dp"-->
+                <!--                                android:background="#D9D9D9"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintStart_toEndOf="@+id/cart_pic2"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/titleTxt2"-->
+                <!--                                android:layout_width="250dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginStart="15dp"-->
+                <!--                                android:layout_marginTop="20dp"-->
+                <!--                                android:ellipsize="end"-->
+                <!--                                android:text="Vòng đại dương"-->
+                <!--                                android:textColor="@color/black"-->
+                <!--                                android:textSize="16sp"-->
+                <!--                                app:layout_constraintStart_toEndOf="@+id/view22"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <ImageView-->
+                <!--                                android:layout_width="18dp"-->
+                <!--                                android:layout_height="18dp"-->
+                <!--                                android:layout_marginTop="15dp"-->
+                <!--                                android:layout_marginEnd="15dp"-->
+                <!--                                android:src="@drawable/ic_trash"-->
+                <!--                                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                                android:layout_width="100dp"-->
+                <!--                                android:layout_height="30dp"-->
+                <!--                                android:layout_marginStart="15dp"-->
+                <!--                                android:layout_marginEnd="16dp"-->
+                <!--                                android:layout_marginBottom="15dp"-->
+                <!--                                android:background="@drawable/edittext_bg"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintStart_toEndOf="@+id/cart_pic2">-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/plusCartBtn2"-->
+                <!--                                    android:layout_width="28dp"-->
+                <!--                                    android:layout_height="28dp"-->
+                <!--                                    android:layout_marginVertical="2dp"-->
+                <!--                                    android:layout_marginEnd="2dp"-->
+                <!--                                    android:background="@drawable/edittext_bg"-->
+                <!--                                    android:backgroundTint="@color/pinkRed"-->
+                <!--                                    android:gravity="center"-->
+                <!--                                    android:text="+"-->
+                <!--                                    android:textColor="@color/white"-->
+                <!--                                    android:textSize="14sp"-->
+                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/numberItemTxt2"-->
+                <!--                                    android:layout_width="wrap_content"-->
+                <!--                                    android:layout_height="wrap_content"-->
+                <!--                                    android:text="1"-->
+                <!--                                    android:textColor="@color/black"-->
+                <!--                                    android:textStyle="bold"-->
+                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                                <TextView-->
+                <!--                                    android:id="@+id/minusCartBtn2"-->
+                <!--                                    android:layout_width="28dp"-->
+                <!--                                    android:layout_height="28dp"-->
+                <!--                                    android:layout_marginStart="2dp"-->
+                <!--                                    android:layout_marginTop="2dp"-->
+                <!--                                    android:layout_marginBottom="2dp"-->
+                <!--                                    android:background="@drawable/edittext_bg"-->
+                <!--                                    android:backgroundTint="@color/white"-->
+                <!--                                    android:gravity="center"-->
+                <!--                                    android:text="-"-->
+                <!--                                    android:textColor="@color/pinkRed"-->
+                <!--                                    android:textSize="14sp"-->
+                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginEnd="15dp"-->
+                <!--                                android:layout_marginBottom="15dp"-->
+                <!--                                android:text="150.000đ"-->
+                <!--                                android:textSize="18sp"-->
+                <!--                                android:textStyle="bold"-->
+                <!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                                app:layout_constraintEnd_toEndOf="parent" />-->
+
+                <!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <!--                    </androidx.cardview.widget.CardView>-->
+                <!--                </LinearLayout>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nhập thông tin của bạn:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/grey_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_phone"
+                        app:tint="@color/black" />
+
+                    <EditText
+                        android:id="@+id/phoneNumberEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_background"
+                        android:hint="Nhập số điện thoại"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/grey_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_location" />
+
+                    <EditText
+                        android:id="@+id/houseStreetEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_background"
+                        android:hint="Nhập số nhà, đường"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/grey_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerCity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_background"
+                        android:padding="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerDistrict"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_background"
+                        android:padding="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerWard"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_background"
+                        android:padding="10dp" />
+<!--                    <androidx.appcompat.widget.AppCompatButton-->
+<!--                        android:id="@+id/button"-->
+<!--                        style="@android:style/Widget.Button"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:background="@drawable/grey_background"-->
+<!--                        android:backgroundTint="#32C76E"-->
+<!--                        android:text="Xác nhận"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:id="@+id/subtotalTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Thành tiền"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/priceSubtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:text="300.000đ"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/deliveryTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Phí giao hàng"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/subtotalTxt" />
+
+                    <TextView
+                        android:id="@+id/priceDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:text="30.000đ"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/priceSubtotal" />
+
+                    <View
+                        android:layout_width="370dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#D2D2D2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/deliveryTxt" />
+
+                    <TextView
+                        android:id="@+id/totalTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="45dp"
+                        android:text="Tổng cộng"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/deliveryTxt" />
+
+                    <TextView
+                        android:id="@+id/priceTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="12dp"
+                        android:text="340.000đ"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/priceDelivery" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCheckout"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/button_bg"
+                    android:text="Thanh toán và đặt hàng"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

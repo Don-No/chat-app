@@ -1,0 +1,121 @@
+{
+  "Hà Nội": {
+    "Ba Đình": ["Phúc Xá", "Trúc Bạch", "Vĩnh Phúc", "Cống Vị", "Liễu Giai"],
+    "Hoàn Kiếm": ["Chương Dương", "Cửa Nam", "Hàng Bạc", "Hàng Bài", "Hàng Bồ"],
+    "Đống Đa": ["Cát Linh", "Hàng Bột", "Khâm Thiên", "Láng Hạ", "Láng Thượng"],
+    "Hai Bà Trưng": ["Nguyễn Du", "Bạch Đằng", "Phạm Đình Hổ", "Lê Đại Hành", "Đồng Nhân"],
+    "Hoàng Mai": ["Đại Kim", "Định Công", "Giáp Bát", "Hoàng Liệt", "Hoàng Văn Thụ"],
+    "Thanh Xuân": ["Khương Trung", "Khương Mai", "Khương Đình", "Hạ Đình", "Thanh Xuân Trung"]
+  },
+  "TP. Hồ Chí Minh": {
+    "Quận 1": ["Bến Nghé", "Bến Thành", "Cầu Kho", "Cầu Ông Lãnh", "Cô Giang"],
+    "Quận 2": ["An Khánh", "An Lợi Đông", "An Phú", "Bình An", "Bình Khánh"],
+    "Quận 3": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 4": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 5": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 6": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 7": ["Tân Thuận Đông", "Tân Thuận Tây", "Tân Kiểng", "Tân Hưng", "Bình Thuận"],
+    "Quận 8": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 9": ["Hiệp Phú", "Long Bình", "Long Phước", "Long Thạnh Mỹ", "Long Trường"],
+    "Quận 10": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 11": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Quận 12": ["An Phú Đông", "Đông Hưng Thuận", "Hiệp Thành", "Tân Chánh Hiệp", "Tân Hưng Thuận"],
+    "Bình Tân": ["An Lạc", "An Lạc A", "Bình Hưng Hòa", "Bình Hưng Hòa A", "Bình Hưng Hòa B"],
+    "Bình Thạnh": ["Phường 1", "Phường 2", "Phường 3", "Phường 5", "Phường 6"],
+    "Gò Vấp": ["Phường 1", "Phường 3", "Phường 4", "Phường 5", "Phường 6"],
+    "Phú Nhuận": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Tân Bình": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5"],
+    "Tân Phú": ["Hiệp Tân", "Hòa Thạnh", "Phú Thạnh", "Phú Thọ Hòa", "Phú Trung"],
+    "Thủ Đức": ["Bình Chiểu", "Bình Thọ", "Hiệp Bình Chánh", "Hiệp Bình Phước", "Linh Chiểu"]
+  },
+  "Đà Nẵng": {
+    "Hải Châu": ["Bình Hiên", "Bình Thuận", "Hải Châu 1", "Hải Châu 2", "Hòa Cường Bắc", "Hòa Cường Nam", "Hòa Thuận Đông", "Hòa Thuận Tây", "Nam Dương", "Phước Ninh", "Thạch Thang", "Thanh Bình", "Thuận Phước"],
+    "Thanh Khê": ["An Khê", "Chính Gián", "Hòa Khê", "Tam Thuận", "Tân Chính", "Thạc Gián", "Thanh Khê Đông", "Thanh Khê Tây", "Vĩnh Trung", "Xuân Hà"],
+    "Sơn Trà": ["An Hải Bắc", "An Hải Đông", "An Hải Tây", "Mân Thái", "Nại Hiên Đông", "Phước Mỹ", "Thọ Quang"],
+    "Ngũ Hành Sơn": ["Hòa Hải", "Hòa Quý", "Khuê Mỹ", "Mỹ An"],
+    "Liên Chiểu": ["Hòa Hiệp Bắc", "Hòa Hiệp Nam", "Hòa Khánh Bắc", "Hòa Khánh Nam", "Hòa Minh"],
+    "Cẩm Lệ": ["Hòa An", "Hòa Phát", "Hòa Thọ Đông", "Hòa Thọ Tây", "Hòa Xuân"],
+    "Hòa Vang": ["Hòa Bắc", "Hòa Châu", "Hòa Khương", "Hòa Liên", "Hòa Ninh", "Hòa Phong", "Hòa Phú", "Hòa Phước"]
+  },
+  "Hải Phòng": {
+    "Hồng Bàng": ["Quán Toan", "Sở Dầu", "Thượng Lý", "Hạ Lý", "Minh Khai"],
+    "Ngô Quyền": ["Máy Chai", "Máy Tơ", "Vạn Mỹ", "Cầu Tre", "Đổng Quốc Bình"],
+    "Lê Chân": ["An Biên", "An Dương", "Cát Dài", "Dư Hàng", "Dư Hàng Kênh"],
+    "Hải An": ["Đằng Hải", "Đằng Lâm", "Nam Hải", "Thành Tô", "Tràng Cát"],
+    "Kiến An": ["Bắc Sơn", "Đồng Hòa", "Nam Sơn", "Ngọc Sơn", "Phù Liễn"]
+  },
+  "Cần Thơ": {
+    "Ninh Kiều": ["An Bình", "An Cư", "An Hòa", "An Khánh", "An Lạc"],
+    "Bình Thủy": ["An Thới", "Bình Thủy", "Bùi Hữu Nghĩa", "Long Hòa", "Long Tuyền"],
+    "Cái Răng": ["Ba Láng", "Hưng Phú", "Hưng Thạnh", "Lê Bình", "Phú Thứ"],
+    "Ô Môn": ["Châu Văn Liêm", "Long Hưng", "Phước Thới", "Thới An", "Thới Hòa"]
+  },
+  "Huế": {
+    "Phú Hòa": ["Phú Thuận", "Phú Bình", "Phú Hậu", "Phú Nhuận", "Phú Thọ"],
+    "Tây Lộc": ["Lộc Hòa", "Lộc Sơn", "Lộc Thủy", "Lộc Tiến", "Lộc Vượng"],
+    "Hương Thuỷ": ["Điền Hòa", "Điền Hồng", "Điền Hồng", "Điền Môn", "Điền Vĩnh"],
+    "Hương Trà": ["Hương An", "Hương Chữ", "Hương Đô", "Hương Vân", "Hương Vinh"],
+    "Phú Vang": ["Phú Gia", "Phú Đa", "Phú Hồ", "Phú Mậu", "Phú Mỹ"]
+  },
+  "Hội An": {
+    "Minh An": ["Cẩm Phô", "Cẩm Sơn", "Cẩm Thanh", "Cửa Đại", "Cửa Đạo"],
+    "Tân An": ["An Bàng", "An Minh", "An Sơn", "An Tân", "An Vĩnh"],
+    "Sơn Phong": ["Cẩm An", "Cửa Bắc", "Cửa Nam", "Cửa Sót", "Cửa Đông"],
+    "Cẩm Nam": ["Cẩm Hà", "Cẩm Kim", "Cẩm Nam", "Cẩm Thanh", "Cẩm Tú"]
+  },
+  "Đà Lạt": {
+    "Thành phố Đà Lạt": ["1", "2", "3", "4", "5"],
+    "Bảo Lộc": ["Lộc Bảo", "Lộc Châu", "Lộc Hà", "Lộc Phú", "Lộc Thanh"]
+  },
+  "Nha Trang": {
+    "Thành phố Nha Trang": ["Lộc Thọ", "Lộc An", "Lộc Điền", "Lộc Điền", "Lộc Thắng"],
+    "Cam Ranh": ["Lộc Châu", "Lộc Hiệp", "Lộc Hòa", "Lộc Khánh", "Lộc Lâm"]
+  },
+  "Vũng Tàu": {
+    "Thành phố Vũng Tàu": ["Lộc An", "Lộc Bảo", "Lộc Châu", "Lộc Điền", "Lộc Điền"],
+    "Bà Rịa": ["Lộc Châu", "Lộc Hà", "Lộc Phú", "Lộc Thanh", "Lộc Tú"]
+  },
+  "Quy Nhơn": {
+    "Thành phố Quy Nhơn": ["Lộc An", "Lộc Bảo", "Lộc Châu", "Lộc Điền", "Lộc Thịnh"]
+  },
+"Thái Bình": {
+    "Thành phố Thái Bình": ["Bồ Xuyên", "Hoàng Diệu", "Lê Hồng Phong", "Phú Khánh", "Tiền Phong"],
+    "Quỳnh Phụ": ["An Bài", "Đông Thọ", "Quỳnh Côi", "Quỳnh Hải", "Quỳnh Hoa"]
+  },
+  "Nam Định": {
+    "Thành phố Nam Định": ["Hòa Vượng", "Lộc Hạ", "Mỹ Xá", "Nguyễn Du", "Trần Tế Xương"],
+    "Giao Thủy": ["Bạch Long", "Giao Hà", "Giao Thiện", "Ngọc Lễ", "Thị Trấn Ngô Đồng"]
+  },
+  "Ninh Bình": {
+    "Thành phố Ninh Bình": ["Đông Thành", "Nam Thành", "Ninh Khánh", "Tân Thành", "Thanh Bình"],
+    "Tam Điệp": ["Bắc Sơn", "Tây Sơn", "Trung Sơn", "Yên Sơn", "Đông Sơn"]
+  },
+  "Phú Thọ": {
+    "Thành phố Việt Trì": ["Bạch Hạc", "Bến Gót", "Dữu Lâu", "Gia Cẩm", "Tiên Cát"],
+    "Phú Thọ": ["Hùng Lô", "Hy Cương", "Phượng Lâu", "Thanh Vinh", "Xuân Quang"]
+  },
+  "Thanh Hóa": {
+    "Thành phố Thanh Hóa": ["Đông Hải", "Đông Hương", "Hàm Rồng", "Nam Ngạn", "Quảng Hưng"],
+    "Bỉm Sơn": ["Bắc Sơn", "Hợp Thành", "Lam Sơn", "Ngọc Trạo", "Quang Trung"]
+  },
+  "Bình Dương": {
+    "Thành phố Thủ Dầu Một": ["Chánh Mỹ", "Hiệp An", "Phú Lợi", "Phú Mỹ", "Phú Tân"],
+    "Thị xã Bến Cát": ["Mỹ Phước", "Tân Định", "Thanh Tuyền", "Thới Hòa", "Tương Bình Hiệp"]
+  },
+  "Đồng Nai": {
+    "Thành phố Biên Hòa": ["An Bình", "Bửu Long", "Hóa An", "Tân Mai", "Trảng Dài"],
+    "Thị xã Long Khánh": ["Bảo Vinh", "Phú Bình", "Xuân An", "Xuân Lập", "Xuân Trung"]
+  },
+  "Đồng Tháp": {
+    "Thành phố Cao Lãnh": ["Mỹ Ngãi", "Mỹ Phú", "Mỹ Tân", "Mỹ Trà", "Tân Thuận Đông"],
+    "Thị xã Sa Đéc": ["An Hoà", "Tân Khánh Đông", "Tân Quy Đông", "Tân Quy Tây", "Tân Phú Đông"]
+  },
+  "An Giang": {
+    "Thành phố Long Xuyên": ["Đông Xuyên", "Mỹ Bình", "Mỹ Hòa", "Mỹ Quý", "Mỹ Thới"],
+    "Thị xã Châu Đốc": ["Châu Phú A", "Châu Phú B", "Núi Sam", "Vĩnh Mỹ", "Vĩnh Ngươn"]
+  },
+  "Kiên Giang": {
+    "Thành phố Rạch Giá": ["An Bình", "An Hòa", "Vĩnh Hiệp", "Vĩnh Lạc", "Vĩnh Thanh"],
+    "Thị xã Hà Tiên": ["Bình San", "Đông Hồ", "Pháo Đài", "Tô Châu", "Trần Hợp"]
+  }
+}
